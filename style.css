@@ -1,0 +1,27 @@
+:root {
+  --yellow-brand: #d8d041;
+  --light-yellow: #e1da6b;
+  --white-yellow: #fbfaea;
+
+  --light-grey: #8b8c8b;
+  --dark-grey: #353937;
+
+  --dark-green: #013215;
+  --medium-green: #037230;
+  --brand-green: #04a445;
+  --vibrant-green: #15f972;
+  --white-green: #f5fff9;
+}
+
+*,
+*:after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
