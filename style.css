@@ -21,7 +21,126 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--white-green);
+  overflow-x: hidden;
+}
+
 .container {
-  width: 90%;
+  max-width: 1200px;
   margin: auto;
+}
+.l-heading {
+  font-size: 57px;
+  color: var(--dark-green);
+}
+.brand-secondary {
+  color: var(--brand-green);
+}
+.brand-primary {
+  color: var(--yellow-brand);
+}
+.btn {
+  all: unset;
+  display: inline-block;
+  padding: 7px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: var(--medium-green);
+  color: var(--white-green);
+  border: 2px solid var(--medium-green);
+}
+.btn-secondary {
+  border: 2px solid var(--yellow-brand);
+  color: var(--yellow-brand);
+}
+
+.nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+  padding: 10px 0;
+}
+
+.nav img {
+  width: 65px;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav ul a {
+  color: var(--medium-green);
+  padding: 7px 15px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul a:hover,
+.nav ul a.active {
+  font-weight: 700;
+}
+
+.hero .container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* overflow-x: hidden; */
+  /* flex: 0 1 auto; */
+}
+.hero .container .content {
+  flex-shrink: 1;
+  flex-grow: 2;
+  width: 800px;
+  border: 1px solid var(--brand-green);
+}
+.hero .container .content .l-heading {
+  font-weight: 300;
+}
+.hero .img {
+  flex-grow: 0;
+  flex-basis: 400px;
+  flex-shrink: 0;
+  border: 1px solid var(--yellow-brand);
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .img .bg {
+  position: absolute;
+  width: 450px;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.hero .img .heroimg {
+  width: 400px;
+}
+.hero .img .overlay {
+  width: 450px;
+
+  position: absolute;
+  left: 5px;
+  bottom: 0;
 }
