@@ -32,14 +32,17 @@ body {
   margin: auto;
 }
 .l-heading {
-  font-size: 57px;
+  font-size: 52px;
   color: var(--dark-green);
+  font-weight: 600;
 }
 .brand-secondary {
   color: var(--brand-green);
+  font-weight: 600;
 }
 .brand-primary {
   color: var(--yellow-brand);
+  font-weight: 600;
 }
 .btn {
   all: unset;
@@ -65,6 +68,11 @@ body {
   top: 0;
   right: 0;
   transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.nav.active {
+  background-color: var(--dark-green);
 }
 
 .nav .container {
@@ -72,11 +80,13 @@ body {
   align-items: center;
   justify-content: space-between;
   transition: all 0.3s ease-in-out;
+  padding: 20px 0;
+}
+.nav.active .container {
   padding: 10px 0;
 }
-
 .nav img {
-  width: 65px;
+  width: 55px;
 }
 
 .nav ul {
@@ -92,41 +102,70 @@ body {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
-
+.nav.active ul a {
+  color: var(--white-green);
+}
 .nav ul a:hover,
 .nav ul a.active {
   font-weight: 700;
 }
+.nav .btn-secondary {
+  margin-right: 2rem;
+}
 
+/* hero section */
+.hero {
+  margin-top: 40px;
+  /* background-color: #013215; */
+}
 .hero .container {
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
-  /* overflow-x: hidden; */
-  /* flex: 0 1 auto; */
 }
 .hero .container .content {
   flex-shrink: 1;
   flex-grow: 2;
   width: 800px;
-  border: 1px solid var(--brand-green);
+  /* border: 1px solid var(--brand-green); */
 }
 .hero .container .content .l-heading {
-  font-weight: 300;
+  font-weight: 500;
+}
+.hero .container .content p {
+  font-size: 24px;
+  margin-top: 1.25rem;
+  line-height: 2;
+  max-width: 600px;
+}
+
+.hero .container .cta {
+  margin-top: 4rem;
+}
+.hero .container .cta .btn-secondary {
+  margin-right: 1.5rem;
 }
 .hero .img {
   flex-grow: 0;
   flex-basis: 400px;
   flex-shrink: 0;
-  border: 1px solid var(--yellow-brand);
+  /* border: 1px solid var(--yellow-brand); */
   position: relative;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+.imgbgcolor {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 600px;
+  height: 100%;
+  background: #fff;
+  z-index: -4;
+}
 .hero .img .bg {
   position: absolute;
   width: 450px;
@@ -143,4 +182,43 @@ body {
   position: absolute;
   left: 5px;
   bottom: 0;
+}
+
+/* Why section */
+#why .l-heading {
+  text-align: center;
+}
+
+#why p {
+  margin-top: 1rem;
+  font-size: 24px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+/* count section */
+#count {
+  height: 40vh;
+  background: rgba(255, 255, 255, 0.38);
+}
+#count .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+#count .num {
+  font-size: 60px;
+  font-weight: 400;
+  color: var(--medium-green);
+}
+#count .detail {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--medium-green);
+}
+
+#what .l-heading {
+  text-align: center;
 }
