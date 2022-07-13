@@ -1,0 +1,77 @@
+.container {
+  max-width: 800px;
+}
+.l-heading {
+  font-size: 40px;
+}
+
+.hamburger {
+  display: block;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+  position: fixed;
+  left: -1200px;
+  top: 80px;
+  gap: 0;
+  padding: 1rem 0;
+  flex-direction: column;
+  background-color: var(--dark-green);
+  width: 100vw;
+  text-align: center;
+  transition: 0.3s;
+  z-index: 1000;
+}
+.nav-menu.active {
+  left: 0;
+}
+.nav ul {
+  flex-direction: column;
+}
+.nav .btn-secondary {
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.nav .nav-menu a,
+.nav .nav-menu div a {
+  display: block;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.hero .container .content p,
+#why p,
+#count .detail {
+  font-size: 18px;
+}
+
+#count .num {
+  font-size: 54px;
+}
+
+#what .card {
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.testimonials .card {
+  width: 400px;
+  height: auto;
+}
+.testimonials p {
+  font-size: 18px;
+}

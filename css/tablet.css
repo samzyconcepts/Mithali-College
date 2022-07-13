@@ -1,0 +1,55 @@
+.container {
+  max-width: 500px;
+}
+.l-heading {
+  text-align: center;
+}
+.hero {
+  margin-top: 100px;
+}
+.hero .container {
+  flex-direction: column;
+  height: auto;
+  gap: 30px;
+}
+
+.hero .container .content {
+  width: auto;
+  text-align: center;
+}
+.imgbgcolor {
+  display: none;
+}
+
+#why p {
+  text-align: center;
+}
+
+#count .card:last-child {
+  display: none;
+}
+
+.testimonials {
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  background-repeat: repeat;
+}
+
+footer .container .brand-copyright {
+  display: flex;
+  align-items: center;
+  gap: 350px;
+}
+
+footer .container .brand-copyright p {
+  display: none;
+}
+footer .container .footer-content,
+footer .container .footer-nav {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
