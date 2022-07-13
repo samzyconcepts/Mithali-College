@@ -12,9 +12,25 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <!-- link to boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <!-- link for css -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+			rel="stylesheet"
+			media="screen and (max-width: 1024px)"
+			href="css/widescreen.css"
+		/>
+    <link
+			rel="stylesheet"
+			media="screen and (max-width: 768px)"
+			href="css/tablet.css"
+		/>
+
     <title>Mithali college</title>
   </head>
   <body>
@@ -27,19 +43,27 @@
               alt="Mithali college"
               class="brand"
           /></a>
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item"><a href="" class="nav-link">Admission</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Contact Us</a></li>
-            <li class="nav-item"><a href="" class="nav-link">About Us</a></li>
-          </ul>
+          <div class="nav-menu">
+            <ul>
+              <li class="nav-item">
+                <a href="index.html" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item"><a href="admission.html" class="nav-link">Admission</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            </ul>
 
-          <div>
-            <a href="#" class="btn btn-secondary">Download Form</a>
-            <a href="" class="btn btn-primary">Apply Now</a>
+            <div>
+              <a href="#" class="btn btn-secondary">Download Form</a>
+              <a href="" class="btn btn-primary">Apply Now</a>
+            </div>
           </div>
+         
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         </div>
       </nav>
       <section class="hero">
@@ -122,11 +146,47 @@
           <span class="brand-secondary">At MITHALI</span>
           <span class="brand-primary">COLLEGE</span> we Build
         </h1>
+
+        <div class="card">
+          <div class="box">
+            <div class="icon">
+              <img src="./images/Group.svg" class="group" alt="group" />
+            </div>
+            <h4>CONFIDENCE</h4>
+            <p>
+              We have a Passionate tutors who are keen to Impacting in your
+              wards confidence.
+            </p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <img src="./images/Vector.svg" class="group" alt="group" />
+            </div>
+            <h4>Believe</h4>
+            <p>
+              We have a Passionate tutors who are keen to Impacting in your
+              wards confidence.
+            </p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <img src="./images/Vector (1).svg" class="group" alt="group" />
+            </div>
+            <h4>Culture</h4>
+            <p>
+              We have a Passionate tutors who are keen to Impacting in your
+              wards confidence.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- section: Gallery -->
-
+    <section id="gallery">
+      <h1 class="l-heading">Gallery</h1>
+      <div class="image-carousel"></div>
+    </section>
     <!-- Section: Testimonials -->
     <section id="testimonial">
       <div class="container">
@@ -140,7 +200,16 @@
               gave me to be on the life changing training, It has been a great
               ride for me, all thanks to all amazing tutors.
             </p>
-            <strong class="brand-secondary">Mark Emmylyrics</strong>
+            <p class="brand-secondary">Mark Emmylyrics</p>
+            <p class="brand-primary">Parent</p>
+          </div>
+          <div class="card">
+            <p class="content">
+              I always thank Google and don jazzy for the opportunities they
+              gave me to be on the life changing training, It has been a great
+              ride for me, all thanks to all amazing tutors.
+            </p>
+            <p class="brand-secondary">Mark Emmylyrics</p>
             <p class="brand-primary">Parent</p>
           </div>
         </div>
@@ -148,7 +217,50 @@
     </section>
 
     <!-- SECTION: footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
 
+          <div class="brand-copyright">
+            <img src="./images/brand-logop.png" class="brand" alt="logo" />
+            <p>Copyright 2022 MITHALI COLLEGE</p>
+  
+            <div class="social-links">
+              <a href="#"><i class="bx bxl-facebook"></i> </a>
+              <a href="#"><i class="bx bxl-instagram"></i> </a>
+              <a href="#"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+  
+          <div class="footer-nav">
+            <ul>
+              <li>Explore</li>
+              <li><a href="/">Admission</a></li>
+              <li><a href="about.html">Article</a></li>
+              <li><a href="#">Blogs</a></li>
+            </ul>
+  
+            <ul>
+              <li>About</li>
+              <li><a href="#">Privacy</a></li>
+              <li>
+                <a href="terms_and_conditions.html">Terms and Conditions</a>
+              </li>
+              <li><a href="#">Support</a></li>
+            </ul>
+            <ul>
+              <li>Community</li>
+              <li><a href="#">Subscriptions</a></li>
+              <li><a href="#">Lessons</a></li>
+              <li><a href="#">Courses</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="move-right">
+          <img src="./images/brand-logop.png" class="brand" alt="logo" />
+        </div>
+      </div>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>
