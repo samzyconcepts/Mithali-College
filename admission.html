@@ -21,12 +21,28 @@
     <!-- link for css -->
     <link rel="stylesheet" href="css/style.css" />
     <link
+      rel="stylesheet"
+      media="screen and (max-width: 1024px)"
+      href="css/widescreen.css"
+    />
+    <link
 			rel="stylesheet"
 			media="screen and (max-width: 1024px)"
 			href="css/widescreen.css"
 		/>
+    <link
+			rel="stylesheet"
+			media="screen and (max-width: 768px)"
+			href="css/tablet.css"
+		/>
+    <link
+			rel="stylesheet"
+			media="screen and (max-width: 500px)"
+			href="css/mobile.css"
+		/>
 
     <title>Mithali college</title>
+
   </head>
   <body>
     <header>
@@ -38,42 +54,90 @@
               alt="Mithali college"
               class="brand"
           /></a>
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item"><a href="" class="nav-link">Admission</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Contact Us</a></li>
-            <li class="nav-item"><a href="" class="nav-link">About Us</a></li>
-          </ul>
+          <div class="nav-menu">
+            <ul>
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="admission.html" class="nav-link active">Admission</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">About Us</a>
+              </li>
+            </ul>
 
-          <div>
-            <a href="#" class="btn btn-secondary">Download Form</a>
-            <a href="" class="btn btn-primary">Apply Now</a>
+            <div>
+              <a href="#" class="btn btn-secondary">Download Form</a>
+              <a href="" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </div>
         </div>
       </nav>
-    
+
+      <section id="admission">
+        <div class="container">
+          <h1 class="l-heading">Admission</h1>
+          <div class="admission-process">
+            <h3 class="sub-heading">ADMISSION PROCESS</h3>
+            <p class="content">
+              Applications are invited from suitably qualified candidates for
+              admission into 2020/2021 academic session application on forms are
+              obtainable online. The admission form is five thousand naira
+              (#5000) only. This amount also includes the cost of downloading
+              past question from the website.
+            </p>
+
+            <h3 class="sub-heading">REQUIREMENTS FOR THE CANDIDATES</h3>
+            <p class="content">
+              Those who will be eligible for admission into jss1 for 2020/2021
+              academic session must be Ten (10) years old by September, 2020
+              candidates will be required to present originals and photocopies
+              of their birth certificate during interview.
+            </p>
+
+            <h3 class="sub-heading">HOW TO APPLY FOR MITHALI COLLEGE FROM</h3>
+            <div>
+              <p>1. Fill the admission payment form and click on “Submit”</p>
+              <p>2. After submitting the payment form you will be presented with the payment option available the first is the online payment option, pay with your naira master card, verse card or GT payment the second is payment at any GT bank branch in Nigeria print the payment slip and pay at any GT bank</p>
+              <p>3. After payment, note down your PINCODE (without the PINCODE you will not be able to fill the admission form)</p>
+             <p>4. Visit this website to fill the admission forms</p>
+             <p>5. Go to admission menu and click on application form and verify your PIN</p>
+            </div>
+
+            <div class="cta">
+              <a href="#" class="btn btn-secondary">Download Form</a>
+              <a href="" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
-
-
 
     <!-- SECTION: footer -->
     <footer>
       <div class="container">
         <div class="footer-content">
-
           <div class="brand-copyright">
             <img src="./images/brand-logop.png" class="brand" alt="logo" />
             <p>Copyright 2022 MITHALI COLLEGE</p>
-  
+
             <div class="social-links">
               <a href="#"><i class="bx bxl-facebook"></i> </a>
               <a href="#"><i class="bx bxl-instagram"></i> </a>
               <a href="#"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
-  
+
           <div class="footer-nav">
             <ul>
               <li>Explore</li>
@@ -81,7 +145,7 @@
               <li><a href="about.html">Article</a></li>
               <li><a href="#">Blogs</a></li>
             </ul>
-  
+
             <ul>
               <li>About</li>
               <li><a href="#">Privacy</a></li>

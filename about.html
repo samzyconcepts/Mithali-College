@@ -21,10 +21,20 @@
     <!-- link for css -->
     <link rel="stylesheet" href="css/style.css" />
     <link
-			rel="stylesheet"
-			media="screen and (max-width: 1024px)"
-			href="css/widescreen.css"
-		/>
+      rel="stylesheet"
+      media="screen and (max-width: 1024px)"
+      href="css/widescreen.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 500px)"
+      href="css/mobile.css"
+    />
 
     <title>Mithali college</title>
   </head>
@@ -38,42 +48,66 @@
               alt="Mithali college"
               class="brand"
           /></a>
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item"><a href="" class="nav-link">Admission</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Contact Us</a></li>
-            <li class="nav-item"><a href="" class="nav-link">About Us</a></li>
-          </ul>
+          <div class="nav-menu">
+            <ul>
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="admission.html" class="nav-link">Admission</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link active">About Us</a>
+              </li>
+            </ul>
 
-          <div>
-            <a href="#" class="btn btn-secondary">Download Form</a>
-            <a href="" class="btn btn-primary">Apply Now</a>
+            <div>
+              <a href="#" class="btn btn-secondary">Download Form</a>
+              <a href="" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </div>
         </div>
       </nav>
-    
     </header>
 
-
-
+      <section id="about">
+        <div class="container">
+          <div class="about-left">
+            <h1 class="l-heading">
+              About Us
+            </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ante facilisi varius odio orci ut est pretium. Gravida massa viverra porta arcu. Nulla volutpat mauris tortor lacus, leo. Arcu tortor non tempor sollicitudin volutpat tristique ultricies. Magna nisl massa, magna amet, purus, etiam gravida mi. Aliquet iaculis suspendisse condimentum non lectus enim, pharetra est, elem</p>
+          </div>
+          <div class="about-right">
+            <div class="img-bg"></div>
+            <img src="./images/about-img.png" alt="a girl image">
+          </div>
+        </div>
+      </section>
     <!-- SECTION: footer -->
     <footer>
       <div class="container">
         <div class="footer-content">
-
           <div class="brand-copyright">
             <img src="./images/brand-logop.png" class="brand" alt="logo" />
             <p>Copyright 2022 MITHALI COLLEGE</p>
-  
+
             <div class="social-links">
               <a href="#"><i class="bx bxl-facebook"></i> </a>
               <a href="#"><i class="bx bxl-instagram"></i> </a>
               <a href="#"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
-  
+
           <div class="footer-nav">
             <ul>
               <li>Explore</li>
@@ -81,7 +115,7 @@
               <li><a href="about.html">Article</a></li>
               <li><a href="#">Blogs</a></li>
             </ul>
-  
+
             <ul>
               <li>About</li>
               <li><a href="#">Privacy</a></li>
