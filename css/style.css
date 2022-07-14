@@ -98,6 +98,7 @@ input[type="submit"] {
   right: 0;
   transition: all 0.3s ease-in-out;
   z-index: 1000;
+  background-color: var(--white-green);
 }
 
 .nav.active {
@@ -321,6 +322,8 @@ input[type="submit"] {
 #gallery .image-carousel {
   margin-top: 2rem;
   background: url("../images/gallery.png") no-repeat top;
+  background-clip: content-box;
+  background-size: cover;
   height: 600px;
   width: 100%;
 }
@@ -456,4 +459,60 @@ input[type="text"]:focus {
   line-height: 3;
   padding-bottom: 40px;
   border-bottom: 1px solid #333;
+}
+
+/* Admission */
+#admission {
+  margin-top: 100px;
+}
+
+#admission .sub-heading {
+  font-weight: 500;
+  color: var(--dark-green);
+  /* line-height: 4; */
+  margin: 2rem 0 1rem;
+}
+#admission .admission-process .content {
+  line-height: 2;
+}
+
+#admission .admission-process .cta {
+  margin: 4rem 0;
+}
+
+/* about */
+#about {
+  margin-top: 100px;
+}
+#about .container {
+  display: flex;
+  gap: 100px;
+}
+#about .container .about-left {
+  flex-basis: 600px;
+}
+#about .container .about-left p {
+  line-height: 2;
+}
+#about .container .about-right {
+  /* width: 800px; */
+  flex-basis: 800px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#about .container .img-bg {
+  width: 800px;
+  height: 350px;
+  background: var(--medium-green);
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  right: -200px;
+  border-radius: 200px 0 0 200px;
+  background-image: url(../images/mithali-pattern.svg);
+}
+#about .container img {
+  width: 350px;
 }

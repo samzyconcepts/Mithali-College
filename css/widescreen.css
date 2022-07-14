@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .container {
   max-width: 800px;
 }
@@ -74,4 +77,21 @@
 }
 .testimonials p {
   font-size: 18px;
+}
+
+/* contact */
+.contact {
+  gap: 50px;
+}
+
+/* About */
+#about .container {
+  gap: 70px;
+}
+#about .container .about-right {
+  flex-basis: 600px;
+}
+#about .container .img-bg {
+  width: 650px;
+  right: -250px;
 }

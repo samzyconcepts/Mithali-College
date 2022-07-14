@@ -53,3 +53,40 @@ footer .container .footer-nav {
   align-items: flex-start;
   gap: 30px;
 }
+
+/* Contact */
+#contact p {
+  font-size: 16px;
+  text-align: center;
+  width: unset;
+}
+#contact h3 {
+  text-align: center;
+}
+.contact {
+  flex-direction: column;
+  gap: 30px;
+}
+.contact form,
+.contact .detail {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+.contact .detail {
+  margin-bottom: 2rem;
+}
+
+/* About */
+#about .container {
+  flex-direction: column;
+  gap: 30px;
+}
+#about .container .about-left,
+#about .container .about-right {
+  flex-basis: auto;
+}
+
+#about .container .about-right .img-bg {
+  width: 800px;
+}

@@ -1,0 +1,63 @@
+body {
+  overflow-x: hidden;
+}
+.container {
+  max-width: 80%;
+}
+.l-heading {
+  font-size: 36px;
+}
+
+.nav img {
+  width: 40px;
+}
+.nav-menu {
+  top: 60px;
+}
+.hero .container .content p,
+#why p,
+#count .detail,
+.testimonials p {
+  font-size: 16px;
+}
+.hero .container .cta {
+  margin-top: 2rem;
+}
+
+.hero .container .cta .btn-secondary {
+  margin: auto;
+}
+.hero .container .cta > * {
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+}
+
+.hero .img {
+  display: none;
+}
+
+#why {
+  margin-top: 2rem;
+}
+
+#count .num {
+  font-size: 40px;
+}
+
+#gallery .image-carousel {
+  background-clip: content-box;
+  background-size: cover;
+  height: 180px;
+}
+
+.testimonials .card {
+  width: auto;
+}
+
+footer .container .brand-copyright {
+  gap: 100px;
+}
+footer .container .footer-nav ul li {
+  font-size: 16px;
+}
