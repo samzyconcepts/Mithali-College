@@ -82,11 +82,34 @@ footer .container .footer-nav {
   flex-direction: column;
   gap: 30px;
 }
+
 #about .container .about-left,
 #about .container .about-right {
   flex-basis: auto;
 }
+#about .container .about-left p {
+  text-align: center;
+}
 
 #about .container .about-right .img-bg {
-  width: 800px;
+  width: 600px;
+}
+
+.miss-viz .container {
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.miss-viz .container > * {
+  width: auto;
+  line-height: 2;
+}
+
+#value .card {
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+#value .card .box {
+  width: 300px;
 }

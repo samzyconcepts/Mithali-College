@@ -1,6 +1,3 @@
-body {
-  overflow-x: hidden;
-}
 .container {
   max-width: 80%;
 }
@@ -60,4 +57,27 @@ footer .container .brand-copyright {
 }
 footer .container .footer-nav ul li {
   font-size: 16px;
+}
+
+/* About */
+#about .container .about-left p {
+  font-size: 16px;
+}
+#about .container .about-right .img-bg {
+  width: 400px;
+  height: 250px;
+}
+
+#about .container img {
+  width: 300px;
+}
+
+@media (max-width: 375px) {
+  #about .container .about-right .img-bg {
+    width: 320px;
+    height: 200px;
+  }
+  #about .container img {
+    width: 250px;
+  }
 }

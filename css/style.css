@@ -483,6 +483,7 @@ input[type="text"]:focus {
 /* about */
 #about {
   margin-top: 100px;
+  position: relative;
 }
 #about .container {
   display: flex;
@@ -495,24 +496,78 @@ input[type="text"]:focus {
   line-height: 2;
 }
 #about .container .about-right {
-  /* width: 800px; */
   flex-basis: 800px;
-  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 #about .container .img-bg {
-  width: 800px;
+  width: 700px;
   height: 350px;
   background: var(--medium-green);
   position: absolute;
   bottom: 0;
   z-index: -1;
-  right: -200px;
+  right: 0;
   border-radius: 200px 0 0 200px;
   background-image: url(../images/mithali-pattern.svg);
 }
 #about .container img {
   width: 350px;
+}
+
+.miss-viz {
+  margin-top: 4rem;
+}
+
+.miss-viz .container {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  /* gap: 100px; */
+}
+
+.miss-viz .container > * {
+  width: 350px;
+  line-height: 2;
+}
+
+#value {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+#value .card {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#value .card .box {
+  border: 1px solid var(--brand-green);
+  width: 300px;
+  height: 300px;
+  padding: 4rem;
+}
+#value .card .box .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  background-color: #4ca7720d;
+  margin: auto;
+  border-radius: 50%;
+}
+
+#value .card .box .img img {
+  width: 40px;
+}
+
+#team {
+  margin-top: 4rem;
+}
+#team .l-heading,
+#team p {
+  text-align: center;
 }
