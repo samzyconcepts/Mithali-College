@@ -81,3 +81,12 @@ footer .container .footer-nav ul li {
     width: 250px;
   }
 }
+
+.team-container {
+  grid-template-columns: 300px;
+  justify-content: center;
+}
+
+#team .profile .img {
+  height: 400px;
+}

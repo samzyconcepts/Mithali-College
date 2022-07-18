@@ -113,3 +113,7 @@ footer .container .footer-nav {
 #value .card .box {
   width: 300px;
 }
+
+.team-container {
+  grid-template-columns: repeat(2, 1fr);
+}
