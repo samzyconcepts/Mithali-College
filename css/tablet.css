@@ -117,3 +117,9 @@ footer .container .footer-nav {
 .team-container {
   grid-template-columns: repeat(2, 1fr);
 }
+
+/* Admission Form */
+.adm-form fieldset,
+.adm-form input[type="submit"] {
+  width: 100%;
+}

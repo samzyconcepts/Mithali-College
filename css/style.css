@@ -61,7 +61,7 @@ body {
   border: 2px solid var(--yellow-brand);
   color: var(--yellow-brand);
 }
-input[type="text"],
+input,
 select,
 textarea {
   width: 100%;
@@ -74,7 +74,7 @@ textarea {
   border-radius: 4px;
   background-color: transparent;
 }
-input[type="text"]:focus,
+input:focus,
 textarea:focus {
   outline: none;
 }
@@ -90,7 +90,15 @@ input[type="submit"] {
   font-size: 1rem;
   font-weight: 500;
 }
-
+.underline {
+  position: relative;
+}
+.underline img {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+}
 .nav {
   position: fixed;
   left: 0;
@@ -598,4 +606,51 @@ input[type="text"]:focus {
 #team .profile p {
   text-align: left;
   color: #ccc;
+}
+
+/* Admission Form */
+.adm-form {
+  margin-top: 150px;
+}
+
+.adm-form .header {
+  text-align: center;
+}
+
+.adm-form .header p {
+  font-size: 1.2rem;
+}
+
+.adm-form .header .avatar {
+  margin-top: 50px;
+}
+
+.adm-form fieldset {
+  width: 60%;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.adm-form fieldset legend {
+  padding: 5px;
+  margin-left: 40px;
+}
+.adm-form fieldset input,
+.adm-form fieldset select {
+  margin: 0;
+  border: none;
+  padding: 0 15px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.adm-form fieldset input[type="date"] {
+  text-transform: uppercase;
+}
+
+.adm-form input[type="submit"] {
+  width: 60%;
+  margin: 50px auto;
+  text-align: center;
+  display: block;
 }
