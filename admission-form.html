@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Oderinwale Samson" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link to boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- link for css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1024px)"
+      href="css/widescreen.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 500px)"
+      href="css/mobile.css"
+    />
+    <title>Mithali College | Admission Form</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <a href="index.html"
+          ><img src="images/brand-logo.svg" alt="Mithali college" class="brand"
+        /></a>
+        <div class="nav-menu">
+          <ul>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="admission.html" class="nav-link">Admission</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+          </ul>
+
+          <div>
+            <a
+              href="./images/admission-form.pdf"
+              class="btn btn-secondary"
+              download="admission form"
+              >Download Form</a
+            >
+            <a href="admission-form.html" class="btn btn-primary">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <form class="adm-form container">
+      <section class="header">
+        <h1 class="l-heading">Admission Form</h1>
+        <p>
+          Fill up these information to apply for
+          <span class="brand-secondary">MITHALI COLLEGE</span>
+        </p>
+
+        <img
+          src="/images/admission photo.svg"
+          alt="image upload avatar "
+          class="avatar"
+        />
+      </section>
+
+      <fieldset>
+        <legend>First Name</legend>
+        <input type="text" id="firstName" placeholder="Mark" />
+      </fieldset>
+      <fieldset>
+        <legend>Middle Name</legend>
+        <input type="text" id="middleName" placeholder="Mark" />
+      </fieldset>
+      <fieldset>
+        <legend>Last Name</legend>
+        <input type="text" id="lastName" placeholder="Mark" />
+      </fieldset>
+      <fieldset>
+        <legend>Gender</legend>
+        <select name="gender" id="gender">
+          <option value="gender" selected>Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Date of Birth</legend>
+        <input type="date" id="lastName" />
+      </fieldset>
+
+      <fieldset>
+        <legend>School Last Attended</legend>
+        <input
+          type="text"
+          id="lastName"
+          placeholder="Name of your last School"
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Select Class</legend>
+        <select name="class" id="class">
+          <option value="select" selected>Select</option>
+          <option value="jss1">JSS1</option>
+          <option value="jss2">JSS2</option>
+          <option value="ss1">SS1</option>
+          <option value="ss2">SS2</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Phone no</legend>
+        <input type="tel" id="phone" placeholder="+2347065292789" />
+      </fieldset>
+      <fieldset>
+        <legend>Parent Full Name</legend>
+        <input type="text" id="parentName" placeholder="Mark Ekpobiyere" />
+      </fieldset>
+      <fieldset>
+        <legend>Email</legend>
+        <input
+          type="email"
+          id="parentName"
+          placeholder="Hisadollar@example.com"
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Occupation</legend>
+        <input type="text" id="occupation" placeholder="Doctor" />
+      </fieldset>
+      <fieldset>
+        <legend>Home Address</legend>
+        <input type="text" id="address" placeholder="No1, jide street ..." />
+      </fieldset>
+
+      <input type="submit" value="Proceed to Payment" />
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>
