@@ -18,3 +18,14 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
 });
+
+// uploading image to the imageUpload container: add event listener to the input type of file
+document.querySelector("#file").addEventListener("change", loadFile);
+
+let imageBox = document.querySelector(".imageUpload");
+
+function loadFile(event) {
+  imageBox.style.backgroundImage = `url(${URL.createObjectURL(
+    event.target.files[0]
+  )})`;
+}

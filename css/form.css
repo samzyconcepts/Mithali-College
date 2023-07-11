@@ -1,0 +1,111 @@
+:root {
+  --yellow-brand: #d8d041;
+  --light-yellow: #e1da6b;
+  --white-yellow: #fbfaea;
+
+  --light-grey: #8b8c8b;
+  --dark-grey: #353937;
+
+  --dark-green: #013215;
+  --medium-green: #037230;
+  --brand-green: #04a445;
+  --vibrant-green: #15f972;
+  --white-green: #f5fff9;
+}
+
+*,
+*:after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--white-green);
+  color: var(--dark-grey);
+  overflow-x: hidden;
+  font-size: 14px;
+}
+.container {
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+.l-heading {
+  font-size: 40px;
+  color: var(--dark-green);
+  font-weight: 600;
+}
+.brand-secondary {
+  color: var(--brand-green);
+  font-weight: 600;
+}
+.brand-primary {
+  color: var(--yellow-brand);
+  font-weight: 600;
+}
+.btn {
+  all: unset;
+  display: inline-block;
+  padding: 7px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: var(--medium-green);
+  color: var(--white-green);
+  border: 2px solid var(--medium-green);
+}
+.btn-secondary {
+  border: 2px solid var(--yellow-brand);
+  color: var(--yellow-brand);
+}
+
+#form {
+  margin-top: 2rem;
+  border: 2px solid var(--brand-green);
+  padding: 2rem;
+  width: 800px;
+}
+.form-header {
+  display: flex;
+  justify-content: space-between;
+}
+.brand {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.brand img {
+  width: 100px;
+}
+.brand a {
+  display: block;
+  color: var(--dark-green);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.brand a i,
+.brand p i {
+  color: var(--brand-green);
+}
+.passport {
+  height: 225px;
+  width: 200px;
+  border: 2px solid var(--brand-green);
+}
+.form-detail {
+  margin-top: 2rem;
+}
+.form-detail h1 {
+  font-size: 24px;
+  text-align: center;
+}
+.disp {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 3rem 0;
+  font-size: 16px;
+}
